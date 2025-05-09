@@ -1,19 +1,54 @@
 <!DOCTYPE html>
- <html >
-     <head>
-         <title>تسجيل الدخول </title>
-         </head>
-          <body>
-             <h2> أهلاً بك بمنصة سمسم </h2> 
-             <form border="1"> 
-                <label> البريد الإلكتروني <input type="email" name="email"> <br>
-                 </label> <label> كلمة المرور <input type="password" name="pass"> <br> 
-                </label> <label> الاسم <input type="text" name="user"><br> 
-                </label> <label> يوم ميلادك <input type="date" name="birthday"><br>
-                 </label> <button> أنشىء حساباً</button><br>
-                  <span>إن كنت تملك حساباً بالفعل قم ب</span> 
-                  <a href="login.html">تسجيل دخول </a> 
-                </form> 
-                <!-- Alyabani Contribution -->
-                </body> 
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="hashem,rama,enas,suhibe ,sedara,leen" />
+    <meta
+      name="discription"
+      content=" موفع تعليمي من الصف الاول للصف الثاني عشر في المملكه الاردنية الهاشمية"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="semsem.jpg">
+    <link rel="stylesheet" href="signin.css" />
+    <title>انشاء حساب</title>
+  </head>
+  <body>
+<div class="content">
+    <div class="title"><h2>أهلاً بك بمنصة سمسم</h2></div>
+    <div class="input">
+      <form>
+     <div>
+       <label>
+        البريد الإلكتروني 
+      </label>
+      <br>
+      <input type="email" name="email"  id="email" required/>
+     </div>
+  <div>
+        <label> كلمة المرور  </label>
+        <br>
+      <input type="password" name="pass" id="pass" required />
+  </div>
+  <div>
+        <label> الاسم الثلاثي</label>
+        <br>
+      <input type="text" name="user" required id="user" />
+  </div>
+   <div>
+       <label> يوم ميلادك</label>
+       <br>
+      <input type="date" name="birthday" required  id="birthday"/>
+   </div>
+      <button id="btn" type="submit">أنشىء حساباً</button>
+    <div>
+        <span> إن كنت تملك حساباً بالفعل قم 
+      
+          <a href="login.html">بتسجيل الدخول</a></span>
+      
+    </div>
+    </form>
+    </div>
+</div>
+<script src="signin.js"></script>
+  </body>
 </html>

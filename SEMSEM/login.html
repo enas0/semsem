@@ -1,20 +1,40 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
-    <title>تسجيل الدخول </title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap" rel="stylesheet">
+    <title>
+        تسجيل الدخول
+    </title>
+
+
 </head>
-<body>
-    <h2> أهلاً بعودتك </h2>
-    <form border="1">
-        <label>
-         البريد الإلكتروني <input type="email" name="email"> <br>  
-        </label>
-        <label>
-        كلمة المرور  <input type="password" name="pass" pattern=""> <br>  
-        </label>
-        <button>تسجيل الدخول</button><br>
-        <span> ان كنت لا تملك حساباً قم ب</span>
-        <a href="signin.html"> إنشاء حساب جديد </a>
-    </form>
-</body>
-</html>
+        <body >
+            <div class="containerLogin">
+                <h2>
+                    أهلاً بعودتك </h2>
+                    <form border="1" class="formlogin">
+                        <label id="email">
+                            البريد الإلكتروني 
+                          <br />  <input type="email" name="email"> <br>
+                        </label>
+                        <label id="pass">
+                            كلمة المرور <br /> <input border="1" type="password" name="pass" pattern=""> <br>
+                        </label>
+                        <button class="loginbtn" id="btn">
+                            تسجيل الدخول
+                        </button><br>
+                                 <h3>
+                                     <span>
+                                         ان كنت لا تملك حساباً قم ب
+                                     </span>
+                                     <a href="signin.html">
+                                         إنشاء حساب جديد
+                                     </a>
+                                 </h3>
+                    </form>
+
+            </div>
+            <script src="signin.js"></script>
+  </body>
+ </html>

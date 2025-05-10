@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html >
 <head>
     <title>تسجيل الدخول </title>
@@ -18,3 +19,70 @@
     </form>
 </body>
 </html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="hashem,rama,enas,suhibe,sedara,leen" />
+    <meta name="description" content="موقع تعليمي من الصف الأول للصف الثاني عشر في المملكة الأردنية الهاشمية" />
+    <meta name="keywords" content="تعليم, الأردن, منصة تعليمية, توجيهي, سمسم, semsem" />
+    <link rel="icon" href="images/semsem1.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>تسجيل الدخول</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="title"><h2>أهلاً بعودتك</h2></div>
+      <div class="input">
+        <form class="formlogin" method="post">
+          <div>
+            <label id="email"> البريد الإلكتروني </label>
+            <br />
+            <input type="email"  id="email" required />
+          </div>
+          <div>
+            <label id="pass"> كلمة المرور </label>
+            <br />
+            <input type="password" id="pass" required />
+          </div>
+
+          <button id="btn" type="submit">تسجيل الدخول</button>
+          <br />
+          <span
+            >ان كنت لا تملك حساباً قم
+            <a href="signin.html">بإنشاء حساب جديد</a></span
+          >
+        </form>
+      </div>
+    </div>
+  <script>
+  let email = document.getElementById("email");
+  let pass = document.getElementById("pass");
+  let btn = document.getElementById("btn");
+
+  email.focus();
+
+  function checkInputs() {
+    if (email.value.trim() !== "" && pass.value.trim() !== "") {
+      btn.style.display = "inline";
+    } else {
+      btn.style.display = "none";
+    }
+  }
+
+  email.addEventListener("input", checkInputs);
+  pass.addEventListener("input", checkInputs);
+
+  // Check once on page load
+  checkInputs();
+</script>
+  </body>
+</html>
+

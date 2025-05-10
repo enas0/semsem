@@ -1,40 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="login.css">
-    <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap" rel="stylesheet">
-    <title>
-        تسجيل الدخول
-    </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="hashem,rama,enas,suhibe,sedara,leen" />
+    <meta name="description" content="موقع تعليمي من الصف الأول للصف الثاني عشر في المملكة الأردنية الهاشمية" />
+    <meta name="keywords" content="تعليم, الأردن, منصة تعليمية, توجيهي, سمسم, semsem" />
+    <link rel="icon" href="images/semsem1.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>تسجيل الدخول</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="title"><h2>أهلاً بعودتك</h2></div>
+      <div class="input">
+        <form class="formlogin" method="post">
+          <div>
+            <label id="email"> البريد الإلكتروني </label>
+            <br />
+            <input type="email"  id="email" required />
+          </div>
+          <div>
+            <label id="pass"> كلمة المرور </label>
+            <br />
+            <input type="password" id="pass" required />
+          </div>
 
+          <button id="btn" type="submit">تسجيل الدخول</button>
+          <br />
+          <span
+            >ان كنت لا تملك حساباً قم
+            <a href="signin.html">بإنشاء حساب جديد</a></span
+          >
+        </form>
+      </div>
+    </div>
+  <script>
+  let email = document.getElementById("email");
+  let pass = document.getElementById("pass");
+  let btn = document.getElementById("btn");
 
-</head>
-        <body >
-            <div class="containerLogin">
-                <h2>
-                    أهلاً بعودتك </h2>
-                    <form border="1" class="formlogin">
-                        <label id="email">
-                            البريد الإلكتروني 
-                          <br />  <input type="email" name="email"> <br>
-                        </label>
-                        <label id="pass">
-                            كلمة المرور <br /> <input border="1" type="password" name="pass" pattern=""> <br>
-                        </label>
-                        <button class="loginbtn" id="btn">
-                            تسجيل الدخول
-                        </button><br>
-                                 <h3>
-                                     <span>
-                                         ان كنت لا تملك حساباً قم ب
-                                     </span>
-                                     <a href="signin.html">
-                                         إنشاء حساب جديد
-                                     </a>
-                                 </h3>
-                    </form>
+  email.focus();
 
-            </div>
-            <script src="signin.js"></script>
+  function checkInputs() {
+    if (email.value.trim() !== "" && pass.value.trim() !== "") {
+      btn.style.display = "inline";
+    } else {
+      btn.style.display = "none";
+    }
+  }
+
+  email.addEventListener("input", checkInputs);
+  pass.addEventListener("input", checkInputs);
+
+  // Check once on page load
+  checkInputs();
+</script>
   </body>
- </html>
+</html>

@@ -1,9 +1,11 @@
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="hashem,rama,enas,suhibe,sedara,leen" />
     <meta name="description" content="موقع تعليمي من الصف الأول للصف الثاني عشر في المملكة الأردنية الهاشمية" />
+    <meta name="keywords" content="تعليم, الأردن, منصة تعليمية, توجيهي, سمسم, semsem" />
     <link rel="icon" href="/SEMSEM/images/semsem1.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,26 +23,26 @@
 
         <nav>
           <ul class="nav-links">
-            <li><a href="#">الصفحة الرئيسية</a></li>
-            <li><a href="#">البرامج التعليمية</a></li>
-            <li><a href="#">عن سمسم</a></li>
-            <li><a href="#">المناهج</a></li>
-            <li><a href="#">الدعم الفني</a></li>
+            <li><a href="#main">الصفحة الرئيسية</a></li>
+            <li><a href="#programs">البرامج التعليمية</a></li>
+            <li><a href="#about">عن سمسم</a></li>
+            <li><a href="#curriculum">المناهج</a></li>
+            <li><a href="#support">الدعم الفني</a></li>
           </ul>
         </nav>
 
         <div class="btn">
-          <button class="marhey-font header-btn login-btn"><a href="html/login.html">تسجيل الدخول</a></button>
-          <button class="marhey-font header-btn account-btn"><a href="html/signin.html">انشاء حساب</a></button>
+          <a href="html/login.html" class="marhey-font header-btn login-btn">تسجيل الدخول</a>
+          <a href="html/signin.html" class="marhey-font header-btn account-btn">انشاء حساب</a>
         </div>
       </header>
 
-      <main class="marhey-font">
+      <main id="main" class="marhey-font">
         <div class="titles">
           <h1>جسر المستقبل للتعليم الذكي والشامل - SEMSEM</h1>
         </div>
 
-        <div class="main">
+        <div id="programs" class="main">
           <div><h1>اختر المرحلة التعليمية</h1></div>
           <div class="boxes">
             <div class="box">
@@ -58,7 +60,7 @@
           </div>
         </div>
 
-        <div class="desc">
+        <div id="about" class="desc">
           <h1>نبذة</h1>
           <p>
             SEMSEM هي منصة تعليمية أردنية ذكية، صمّمها طلاب جامعة الأردن لتكون
@@ -88,12 +90,12 @@
             </div>
           </div>
           <div>
-            <img src="registration.png" alt="صورة تسجيل" />
+            <img src="SEMSEM/images/registration.png" alt="صورة تسجيل" />
           </div>
         </div>
 
         <div class="desc-stu">
-          <img src="kids.png" alt="أطفال يتعلمون" />
+          <img src="SEMSEM/images/kids.png" alt="أطفال يتعلمون" />
           <p>
             الطالب أولاً في SEMSEM، الطالب هو محور كل شيء. صممنا المنصة لتكون رفيقه
             اليومي في التعلم؛ تواكب مستواه، تفهم احتياجاته، وتدعمه خطوة بخطوة. من
@@ -104,7 +106,7 @@
           </p>
         </div>
 
-        <div class="goal">
+        <div id="curriculum" class="goal">
           <p>
             رسالتنا نحن في SEMSEM لا نبني مجرد منصة تعليمية، بل نفتح باباً للفرص
             أمام كل طالب، مهما كانت خلفيته أو ظروفه. نؤمن أن التعليم حق، وليس
@@ -112,8 +114,10 @@
             عائقاً. بفريق شاب، وبأدوات حديثة، نعمل من أجل جيل واعٍ، متعلم،
             وفاعل... جيل يصنع مستقبله بيده، ويقود الأردن نحو غدٍ أذكى.
           </p>
-          <img src="onlineED1.png" alt="تعليم إلكتروني" />
+          <img src="SEMSEM/images/onlineED1.png" alt="تعليم إلكتروني" />
         </div>
+
+        <div id="support"></div> <!-- نقطة ربط دعم فني -->
       </main>
 
       <footer class="marhey-font footer">
